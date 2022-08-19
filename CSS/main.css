@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-img{
+    background-image: linear-gradient(#b2b2b2a1, #b5b5b5b6),url("../images/im3.jpg");
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 100px 50px 100px 100px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.name p{
+    font-weight:bold;
+}
+
+.info-body{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    max-width: 50%;
+    justify-content: center;
+}
+
+.img{
+    max-width: 40%;
+    margin-right: 20px;
+    
+}
+.img img{
+    max-width: 100%;
+    border-radius: 90%;
+    max-height: 100%;
+}
+
+
+
+.info{
+    padding: 20px 20px 20px 0px;
+}
+
+.row h2{
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: light;
+}
+
+.row p{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.btn{
+    margin-top: 10px;
+    
+}
+
+.btn i{
+    margin-right: 5px;
+}
+
+.btn a{
+    color: #eeee;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.btn button:first-child{
+ background-color: #fc5185;
+ border: none;
+ border-radius: 30px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn button:nth-child(2){
+    background-color: #11999e;
+    border: none;
+    border-radius: 30px;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }

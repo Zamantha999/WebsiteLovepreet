@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+        <header>
+            <div class="logo">
+                <h2>JOHN DOE</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../HTML/main.html">Main</a></li>
+                    <li><a href="../HTML/honestly.html">honestly</a></li>
+                    <li><a href="../HTML/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+
+    <div class="form">
+        <form method="POST" action="https://formspree.io/f/xgeqebja">
+        <div class="row">
+            <label>Name</label><br>
+            <input type="text" name="name" placeholder="Name" required>
+        </div>
+
+        <div class="row">
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="Email" id="emails" name="emails" multiple required>
+            <script>
+                function ValidateEmail(email) 
+                    {
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+                    {
+                        return (true)
+                    }
+                        alert("You have entered an invalid email address!")
+                        return (false)
+                    }
+
+            </script>
+        </div>
+
+        <div class="row">
+            <label>Address</label><br>
+            <input type="text" name="address" placeholder="Address" required>
+        </div>
+
+        <div class="row">
+            <label>Postal Code</label><br>
+            <input id="postalCode" type="text" name="postalCode" pattern="[ABCEGHJ-NPRSTVXY]{1}[0-9]{1}[ABCEGHJ-NPRSTV-Z]{1}[ ]?[0-9]{1}[ABCEGHJ-NPRSTV-Z]{1}[0-9]{1}" placeholder="Canadian Postal Code" required>
+        </div>
+
+        <div class="row">
+        <label>Please Select Your Option:</label><br>
+        <input type="radio" id="question" value="Question" placeholder="Email">
+        <label for="question">Question</label><br>
+        <input type="radio" id="comment" value="Comment" placeholder="Email">
+        <label for="comment">Comment</label><br>
+        <input type="radio" id="hiring" value="Hiring" placeholder="Email">
+        <label for="hiring">Hiring</label>
+
+
+    
+    <div id="hiring-in" style="display: none;">
+    <p class="hiring">Hiring</p><br>
+    <input name="hiring" class="hiri"type="text" placeholder="Hiring"><br>
+</div>
+<div id="other" style="display: none;">
+    <p class="comment">Your Input Here:</p>
+    <textarea name="question" name="comment"></textarea>
+</div>
+<script>
+      const buttons = document.querySelectorAll("input[type='radio']");
+      buttons.forEach(button => {
+  button.onclick = () => {
+    if(button.value=='Hiring'){
+        document.querySelector("#other").style="display: none;"; 
+        document.querySelector("#hiring-in").style="display: block;";
+    }
+    else{
+        document.querySelector("#other").style="display: block;"; 
+        document.querySelector("#hiring-in").style="display:none;";
+    }
+  }
+  
+
+})
+    </script>
+
+        </div>
+   
+
+        <div class="btn">
+            
+            <input type="submit" value="Send">
+
+        </div>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
